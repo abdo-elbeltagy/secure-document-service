@@ -1,4 +1,4 @@
-package com.Beltagy.opademo;
+package com.Beltagy.documents;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

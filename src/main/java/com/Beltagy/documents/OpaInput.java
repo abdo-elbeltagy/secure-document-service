@@ -1,4 +1,4 @@
-package com.Beltagy.opademo;
+package com.Beltagy.documents;
 
 public record OpaInput(
         String role,
