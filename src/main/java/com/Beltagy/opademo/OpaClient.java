@@ -20,7 +20,7 @@ public class OpaClient {
         OpaInput input = new OpaInput(role,method,path);
         OpaRequest request = new OpaRequest(input);
         OpaResponse response = restClient.post()
-                .uri("/v1/data/demo/authz/allow")
+                .uri("/v1/data/documents/authz/allow")
                 .body(request)
                 .retrieve()
                 .body(OpaResponse.class);

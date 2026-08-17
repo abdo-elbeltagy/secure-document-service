@@ -8,5 +8,8 @@ services:
     command:
       - "run"
       - "--server"
+      - "--set"
+      - "decision_logs.console=true"
+#      - "--log-level=error"
       - "--addr=0.0.0.0:8181"
       - "/policies"
