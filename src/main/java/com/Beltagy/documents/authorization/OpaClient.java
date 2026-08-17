@@ -17,9 +17,9 @@ public class OpaClient {
     private final RestClient restClient;
 
     public OpaClient(RestClient.Builder restClientBuilder,
-                     @Value("${opa.base-url}") String opaBaseUrl) {
+                     OpaProperties properties) {
         this.restClient = restClientBuilder
-                .baseUrl(opaBaseUrl)
+                .baseUrl(properties.baseUrl())
                 .build();
     }
 
